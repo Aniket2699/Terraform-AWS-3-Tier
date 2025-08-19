@@ -36,18 +36,80 @@ mkdir -p /var/www/html
 cat > /var/www/html/index.html <<HTML
 <!doctype html>
 <html>
-<head><title>Registration Form</title></head>
+<head>
+  <title>Registration Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f7f8;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .container {
+      background: #fff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+      width: 350px;
+      text-align: center;
+    }
+    h2 {
+      margin-bottom: 20px;
+      color: #333;
+    }
+    label {
+      display: block;
+      text-align: left;
+      margin: 10px 0 5px;
+      font-weight: bold;
+      color: #444;
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      margin-bottom: 15px;
+      font-size: 14px;
+    }
+    input[type="submit"] {
+      width: 100%;
+      padding: 12px;
+      background: #007BFF;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 16px;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+    input[type="submit"]:hover {
+      background: #0056b3;
+    }
+  </style>
+</head>
 <body>
-<h2>Register Here</h2>
-<form action="/submit.php" method="post">
-  <label>Name:</label><br>
-  <input type="text" name="name" required><br><br>
-  <label>Email:</label><br>
-  <input type="email" name="email" required><br><br>
-  <label>Password:</label><br>
-  <input type="password" name="password" required><br><br>
-  <input type="submit" value="Register">
-</form>
+  <div class="container">
+    <h2>Register Here</h2>
+    <form action="/submit.php" method="post">
+      <label>Name:</label>
+      <input type="text" name="name" required>
+
+      <label>Email:</label>
+      <input type="email" name="email" required>
+
+      <label>Password:</label>
+      <input type="password" name="password" required>
+
+      <input type="submit" value="Register">
+    </form>
+  </div>
 </body>
 </html>
 HTML
