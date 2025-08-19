@@ -1,0 +1,7 @@
+db_name       = "mydatabase"
+db_username   = "admin"
+db_password   = "MySecretPass123"
+instance_type = "t3.micro"
+ami_id        = "ami-020cba7c55df1f615"
+region        = "us-east-1"
+key_name      = "tf-key-pair"
