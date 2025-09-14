@@ -8,8 +8,7 @@ The setup ensures high availability, scalability, and separation of concerns bet
 
 ## 📌 Architecture
 
-![3-Tier Architecture Diagram](./docs/architecture.png)  
-*(Replace with your own diagram if available)*
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/de267d27-0d7f-468d-bebc-8f677ee3115b" />
 
 **Layers:**
 1. **Web Tier (Public Subnet)**  
