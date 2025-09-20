@@ -70,20 +70,22 @@ curl http://<web-public-ip>
 # To clean up the AWS infrastructure:
 terraform destroy -auto-approve
 
-🔐 Security Considerations
+# 🔐 Security Considerations
+
 Only Web Tier is publicly accessible.
 
 App Tier and DB Tier reside in private subnets.
 
 Security Groups enforce least privilege.
 
-Optionally enable:
+# Optionally enable:
 
 NACLs for subnet-level security
 
 AWS KMS encryption for RDS and EBS volumes
 
-🚀 Future Improvements
+# 🚀 Future Improvements
+
 Add Load Balancer (ALB/ELB) for Web Tier
 
 Configure Auto Scaling Groups
@@ -94,7 +96,7 @@ Implement CI/CD pipeline with GitHub Actions or Jenkins
 
 Add WAF (Web Application Firewall) for extra security
 
-👨‍💻 Author
+# 👨‍💻 Author
 Aniket Dauskar
 
 AWS | Azure | DevOps | Terraform Enthusiast
